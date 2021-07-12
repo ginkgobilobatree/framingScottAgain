@@ -10,7 +10,7 @@
 
 body {
     font-size: 1.6rem;
-    background-image: url(assets/tapetePetrol.jpg);
+    background-image: url(../assets/tapetePetrol.jpg);
     overflow: hidden;
     perspective: 100rem;
 }
@@ -26,7 +26,7 @@ body {
     margin: 25rem auto;
     width: 90rem;
     height: 48rem;
-    background-image: url(assets/rosesAndBike.jpg);
+    background-image: url(../assets/rosesAndBike.jpg);
     background-repeat: no-repeat;
     background-size: 76rem;
     background-position: 5% 90.5%;
@@ -107,7 +107,7 @@ body {
     left: .64rem;
     width: 90rem;
     height: 28rem;
-    background-image: url(assets/scottpilgrim_multiple.png);
+    background-image: url(../assets/scottpilgrim_multiple.png);
     background-repeat: no-repeat;
     background-size: contain;
     animation: run 1s 2s linear 3;
