@@ -1,0 +1,168 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.6rem;
+    background-image: url(/assets/tapetePetrol.jpg);
+    overflow: hidden;
+    perspective: 100rem;
+}
+
+.background {
+    position: relative;
+    outline: 4rem #1f1f1f solid;
+    border-radius: 0%;
+    border-left: 11rem solid #f8f8f8;
+    border-right: 11rem solid #f8f8f8;
+    border-top: 10rem solid #f8f8f8;
+    border-bottom: 10rem solid #f8f8f8;
+    margin: 25rem auto;
+    width: 90rem;
+    height: 48rem;
+    background-image: url(/assets/rosesAndBike.jpg);
+    background-repeat: no-repeat;
+    background-size: 76rem;
+    background-position: 5% 90.5%;
+    animation: fall .3s 1.5s ease-in forwards;
+    transform-origin: top left;
+}
+
+@keyframes fall {
+    74% {
+        transform: rotate(9deg);
+    }
+    89% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(9deg);
+    }
+}
+
+.background::before, .background::after {
+    top: -15rem;
+    border: 3px solid black;
+    z-index: -1;
+    position: absolute;
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1.2rem;
+}
+
+.background::before {
+    left: 12rem;
+}
+
+.background::after {
+    right: 12rem;
+}
+
+.window {
+    position: relative;
+    left: -11rem;
+    top: 15.5rem;
+    width: 10.9rem;
+    height: 13rem;
+    overflow: hidden;
+    animation: shift 3s 2s linear forwards;
+}
+
+@keyframes shift {
+    100%{
+        transform: translateX(79rem);
+    }
+}
+
+.leftHide, .rightHide {
+    position: absolute;
+    top: 8rem;
+    width: 11rem;
+    height: 20rem;
+    background-color: #f8f8f8;
+    z-index: 1;
+}
+
+.leftHide {
+    left: -11rem;
+}
+
+.rightHide {
+    right: -11rem;
+}
+
+.scott {
+    z-index: -1;
+    position: relative;
+    top: -1rem;
+    /* moonwalk
+    top: -14rem; */
+    left: .64rem;
+    width: 90rem;
+    height: 28rem;
+    background-image: url(/assets/scottpilgrim_multiple.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: run 1s 2s linear 3;
+}
+
+@keyframes run {
+    0% {
+        transform: translateX(0);
+    }
+    12.49% {
+        transform: translateX(0);
+    }
+    12.5% {
+        transform: translateX(-11rem);
+    }
+    24.99% {
+        transform: translateX(-11rem);
+    }
+    25% {
+        transform: translateX(-22rem);
+    }
+    37.49% {
+        transform: translateX(-22rem);
+    }
+    37.5% {
+        transform: translateX(-33rem);
+    }
+    49.99% {
+        transform: translateX(-33rem);
+    }
+    50% {
+        transform: translateX(-44rem);
+    }
+    62.49% {
+        transform: translateX(-44rem);
+    }
+    62.5% {
+        transform: translateX(-55rem);
+    }
+    74.99% {
+        transform: translateX(-55rem);
+    }
+    75% {
+        transform: translateX(-66rem);
+    }
+    87.49% {
+        transform: translateX(-66rem);
+    }
+    87.5% {
+        transform: translateX(-77rem);
+    }
+    99.99% {
+        transform: translateX(-77rem);
+    }
+    100% {
+        transform: translateX(-88rem);
+    }
+}
